@@ -1,0 +1,53 @@
+{
+    "entity_type": [
+        "disease",
+        "drug",
+        "symptom",
+        "gene/protein",
+        "gene_ontology",
+        "pathway"
+    ],
+    "relationships": [
+        [
+            "disease",
+            "associated_with",
+            "symptom"
+        ],
+        [
+            "disease",
+            "disease_mapped_to_gene",
+            "gene/protein"
+        ],        
+[
+            "drug",
+            "treats",
+            "disease"
+        ],
+        [
+            "drug",
+            "targets",
+            "gene/protein"
+        ],
+        [
+            "gene/protein",
+            "interacts_with",
+            "gene/protein"
+        ],
+        [
+            "gene/protein",
+            "annotates",
+            "gene_ontology"
+        ],
+        [
+            "pathway",
+            "pathway_has_gene_element",
+            "gene/protein"
+        ]
+    ]
+}
+
+  
+
+
+
+
